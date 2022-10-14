@@ -26,10 +26,10 @@ drive.mount('/content/drive')
 ```
 #Upload data from the url
 eating_url = "https://drive.google.com/file/d/10DgxfeivkUSetxbVqqPGuq0g2PiMNCuj/view?usp=sharing"
-path_df1 ='https://drive.google.com/uc?id=' + eating_url.split('/')[-2] #problem 1: cannot add path -> have to use .split
+path_df1 ='https://drive.google.com/uc?id=' + eating_url.split('/')[-2]
 df_eating_score = pd.read_csv(path_df1)
 
-path_df2 = "/content/drive/MyDrive/dads5001_dataset/opendata_living_score.csv"#problem 2: cannot read csv file, became<!DOCTYPE html><html><head><title>Google Drive -> Has to mount gg drive or upload
+path_df2 = "/content/drive/MyDrive/dads5001_dataset/opendata_living_score.csv"
 df_living_score = pd.read_csv(path_df2)
 
 path_df3 = "/content/drive/MyDrive/dads5001_dataset/opendata_median_price_rent.csv"
@@ -185,27 +185,28 @@ dtypes: float64(17), object(1)
 
 
 ### All district ranking
-***รูป***
+
+![District_ranking](image/District_ranking.png)
 
 
 ### top and bottom 5 livable districts 
-***รูป***
+![top_livable](image/top_livable.png)
 
 
 
 
 ### top and bottom 5 eating districts 
 2.Q: มีเขตไหนบ้างในกรุงเทพที่น่าอยู่ที่สุดและน้อยที่สุดจากคะแนนรวมด้านอาหาร A: 5 อันดับแรกได้แก่ พญาไท(77.19%) วัฒนา(75.83%) ปทุมวัน(75.66%) บางรัก(74.9%) และคลองเตย(74.83%) ส่วนอันดับต่ำที่สุด 5 อันดับหลังได้แก่ จตุจักร(52.10%) บางขุนเทียน(53.60%) ลาดกระบัง(58.88%) บางแค(59.72%) และบางเขน(59.79%) 
-***รูป***
+![top_travel](image/top_eating.png)
 
 ### top and bottom 5 travel districts 
 3.	Q: มีเขตไหนบ้างในกรุงเทพที่น่าอยู่ที่สุดและน้อยที่สุดจากคะแนนรวมด้านการเดินทาง A: 5 อันดับแรกได้แก่ บางรัก(99%) ราชเทวี(98.92%)  ปทุมวัน(98.83%)  คลองสาน(98.58%) และธนบุรี(98.50%) ส่วนอันดับต่ำที่สุด 5 อันดับหลังได้แก่ บางขุนเทียน(62.50%) สายไหม(67.55%) ลาดกระบัง(69.17%) มีนบุรี(69.33%) บางแค(69.50%)
-***รูป***
+![top_travel](image/top_travel.png)
 
 
 ### top and bottom 5 price of the districts 
 4.	Q: มีเขตไหนบ้างในกรุงเทพที่ราคาคอนโดต่อตารางเมตรแพงและถูกที่สุด  A: 5 อันดับที่แพงที่สุดได้แก่ ปทุมวัน(737.67) บางรัก(647.42) วัฒนา(635.67) คลองเตย(632.5) และสาธร(586) และ 5 อันดับที่ถูกที่สุด ได้แก่ มีนบุรี(228) ประเวศ(242.67) ลาดกระบัง(244) บึงกุ่ม(250.5) และบางแค(275.67)
-***รูป***
+![top_price](image/top_price.png)
 
 
 
