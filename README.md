@@ -143,38 +143,37 @@ dtypes: object(12)
 ### Filter
 ทำการเลือกข้อมูลที่ต้องการจะใช้จากข้อมูลด้านบนซึ่งเลือกจากในเขตกรุงเทพเท่านั้น
 
-### ***ใส่รูป***
-
 
 ### Aggreate and merge
 คิดค่าเฉลี่ยของของค่ากลางในแต่ละเขต และจำนวนเคสที่ถูกรายงานแยกเป็นรายเขตและรวมข้อมูลไว้ด้วยกัน ซึ่งจากเขตจำนวน 50 เขต เมื่อนำมารวมกับค่าเช่าต่อตารางเมตรปี 2021 จะพบว่ามีเพียง 37 เขตเท่านั้น และนำทุกข้อมูลมาหาค่าเฉลี่ยแบ่งเป็นประเภท เช่น การบริโภค การเดินทาง และนำมาคำนวณรวมกันอีกครั้ง จากนั้นทำการ normalize ข้อมูลแต่ละอัน ได้แก่่ คะแนนรวมของการกินและการเดินทาง และเขตที่จำนวนเคสน้อยที่สุดและถูกที่สุด นำมารวมกันหาค่าเฉลี่ย จะได้ค่าเฉลี่ยคะแนนที่ดีที่สุดจากทั้ง 3 ด้าน 
 
 
-### ***ใส่รูป***
 
 ```
 
-Int64Index: 118 entries, 0 to 117
-Data columns (total 16 columns):
+Int64Index: 37 entries, 10 to 12
+Data columns (total 18 columns):
  #   Column                                     Non-Null Count  Dtype  
 ---  ------                                     --------------  -----  
- 0   subdistrict_name_en                        118 non-null    object 
- 1   district_name_en                           118 non-null    object 
- 2   province_name_en                           118 non-null    object 
- 3   eating_daytime                             118 non-null    float64
- 4   eating_daytime_price                       118 non-null    float64
- 5   eating_daytime_quality                     118 non-null    float64
- 6   eating_daytime_variety                     118 non-null    float64
- 7   eating_nighttime                           118 non-null    float64
- 8   eating_nighttime_price                     118 non-null    float64
- 9   eating_nighttime_quality                   118 non-null    float64
- 10  eating_nighttime_variety                   118 non-null    float64
- 11  walk_total                                 118 non-null    float64
- 12  access_total                               118 non-null    float64
- 13  drive_total                                118 non-null    float64
- 14  mean_median_rent_price_sqm_district(2021)  118 non-null    float64
- 15  No.case                                    118 non-null    int64  
-dtypes: float64(12), int64(1), object(3)
+ 0   district_name_en                           37 non-null     object 
+ 1   eating_daytime                             37 non-null     float64
+ 2   eating_daytime_price                       37 non-null     float64
+ 3   eating_daytime_quality                     37 non-null     float64
+ 4   eating_daytime_variety                     37 non-null     float64
+ 5   eating_nighttime                           37 non-null     float64
+ 6   eating_nighttime_price                     37 non-null     float64
+ 7   eating_nighttime_quality                   37 non-null     float64
+ 8   eating_nighttime_variety                   37 non-null     float64
+ 9   walk_total                                 37 non-null     float64
+ 10  access_total                               37 non-null     float64
+ 11  drive_total                                37 non-null     float64
+ 12  mean_median_rent_price_sqm_district(2021)  37 non-null     float64
+ 13  No.case                                    37 non-null     float64
+ 14  mean_eating                                37 non-null     float64
+ 15  mean_travel                                37 non-null     float64
+ 16  mean_all                                   37 non-null     float64
+ 17  normalized_all                             37 non-null     float64
+dtypes: float64(17), object(1)
 ```
 
 
