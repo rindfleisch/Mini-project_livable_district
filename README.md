@@ -220,86 +220,88 @@ dtypes: float64(17), object(1)
 
 
 ## Data glossary
+
 ### Eating score
-subdistrict_id =	รหัสตำบล	int4(32,0)
-subdistrict_name_en =	ชื่อตำบล ภาษาอังกฤษ	text
-subdistrict_name_th	= ชื่อตำบล ภาษาไทย	text
-district_id	= รหัสอำเภอ	int4(32,0)
-district_name_en	= ชื่ออำเภอ ภาษาอังกฤษ	text
-district_name_th	= ชื่ออำเภอ ภาษาไทย	text
-province_id	= รหัสจังหวัด	int4(32,0)
-province_name_en	= ชื่อจังหวัด ภาษาอังกฤษ	text
-province_name_th	= ชื่อจังหวัด ภาษาไทย	text
-eating_daytime	= คะแนนการกิน ด้านราคา ช่วงกลางวัน	float8(53,0)
-eating_daytime_price	= คะแนนการกิน ด้านคุณภาพการบริการ ช่วงกลางวัน	float8(53,0)
-eating_daytime_quality	= คะแนนการกิน ด้านความหลากหลายของอาหาร ช่วงกลางวัน	float8(53,0)
-eating_daytime_variety	= คะแนนการกิน ด้านความหลากหลายของอาหาร ช่วงกลางวัน	float8(53,0)
-eating_nighttime	= คะแนนการกิน ด้านราคา ช่วงกลางคืน	float8(53,0)
-eating_nighttime_price	= คะแนนการกิน ด้านคุณภาพการบริการ ช่วงกลางคืน	float8(53,0)
-eating_nighttime_quality	= คะแนนการกิน ด้านความหลากหลายของอาหาร ช่วงกลางคืน	float8(53,0)
-eating_nighttime_variety	= คะแนนการกิน ด้านความหลากหลายของอาหาร ช่วงกลางคืน	float8(53,0)
-source	= แหล่งที่มาของข้อมูล	text
+
+subdistrict_id =	รหัสตำบล	int4(32,0)  
+subdistrict_name_en =	ชื่อตำบล ภาษาอังกฤษ	text  
+subdistrict_name_th	= ชื่อตำบล ภาษาไทย	text  
+district_id	= รหัสอำเภอ	int4(32,0)  
+district_name_en	= ชื่ออำเภอ ภาษาอังกฤษ	text  
+district_name_th	= ชื่ออำเภอ ภาษาไทย	text  
+province_id	= รหัสจังหวัด	int4(32,0)  
+province_name_en	= ชื่อจังหวัด ภาษาอังกฤษ	text  
+province_name_th	= ชื่อจังหวัด ภาษาไทย	text  
+eating_daytime	= คะแนนการกิน ด้านราคา ช่วงกลางวัน	float8(53,0)  
+eating_daytime_price	= คะแนนการกิน ด้านคุณภาพการบริการ ช่วงกลางวัน	float8(53,0)  
+eating_daytime_quality	= คะแนนการกิน ด้านความหลากหลายของอาหาร ช่วงกลางวัน	float8(53,0)  
+eating_daytime_variety	= คะแนนการกิน ด้านความหลากหลายของอาหาร ช่วงกลางวัน	float8(53,0)  
+eating_nighttime	= คะแนนการกิน ด้านราคา ช่วงกลางคืน	float8(53,0)  
+eating_nighttime_price	= คะแนนการกิน ด้านคุณภาพการบริการ ช่วงกลางคืน	float8(53,0)  
+eating_nighttime_quality	= คะแนนการกิน ด้านความหลากหลายของอาหาร ช่วงกลางคืน	float8(53,0)  
+eating_nighttime_variety	= คะแนนการกิน ด้านความหลากหลายของอาหาร ช่วงกลางคืน	float8(53,0)  
+source	= แหล่งที่มาของข้อมูล	text  
 
 ### Living score
-subdistrict_id	= รหัสตำบล	int4(32,0)
-subdistrict_name_en	= ชื่อตำบล ภาษาอังกฤษ	text
-subdistrict_name_th	= ชื่อตำบล ภาษาไทย	text
-district_id	= รหัสอำเภอ	int4(32,0)
-district_name_en	 = ชื่ออำเภอ ภาษาอังกฤษ	text
-district_name_th	= ชื่ออำเภอ ภาษาไทย	text
-province_id	 = รหัสจังหวัด	int4(32,0)
-province_name_en	= ชื่อจังหวัด ภาษาอังกฤษ	text
-province_name_th =	ชื่อจังหวัด ภาษาไทย	text
-walk_leisure =	คะแนนการเข้าถึงสถานที่พักผ่อนหย่อนใจ โดยการเดิน	float8(53,0)
-walk_public_service =	คะแนนการเข้าถึงสถานที่บริการสาธารณะ โดยการเดิน	float8(53,0)
-walk_school	= คะแนนการเข้าถึงสถานศึกษา โดยการเดิน	float8(53,0)
-walk_shopping	= คะแนนการเข้าถึงสถานที่ shopping โดยการเดิน	float8(53,0)
-walk_work	= คะแนนการเข้าถึงแหล่งทำงาน โดยการเดิน	float8(53,0)
-walk_total	= คะแนนการเข้าถึงสถานที่ดำเนินชีวิตประจำวัน โดยการเดิน	float8(53,0)
-access_boat	= คะแนนการเข้าถึงสถานที่ดำเนินชีวิตประจำวัน โดยขนส่งเรือสาธารณะ	float8(53,0)
-access_bus	= คะแนนการเข้าถึงสถานที่ดำเนินชีวิตประจำวัน โดยขนส่งรถ Bus สาธารณะ	float8(53,0)
-access_train	= คะแนนการเข้าถึงสถานที่ดำเนินชีวิตประจำวัน โดยขนส่งรถไฟสาธารณะ	float8(53,0)
-access_total	= คะแนนการเข้าถึงสถานที่ดำเนินชีวิตประจำวัน โดยขนส่งสาธารณะ	float8(53,0)
-drive_leisure	คะแนนการเข้าถึงสถานที่พักผ่อนหย่อนใจ โดยการขับรถยนต์	float8(53,0)
-drive_public_service	= คะแนนการเข้าถึงสถานที่บริการสาธารณะ โดยการขับรถยนต์	float8(53,0)
-drive_school	= คะแนนการเข้าถึงสถานศึกษา โดยการขับรถยนต์	float8(53,0)
-drive_shopping	= คะแนนการเข้าถึงสถานที่ shopping โดยการขับรถยนต์	float8(53,0)
-drive_work	= คะแนนการเข้าถึงแหล่งทำงาน โดยการขับรถยนต์	float8(53,0)
-drive_total	= คะแนนการเข้าถึงสถานที่ดำเนินชีวิตประจำวัน โดยการขับรถยนต์	float8(53,0)
-source	= แหล่งที่มาของข้อมูล
+subdistrict_id	= รหัสตำบล	int4(32,0)  
+subdistrict_name_en	= ชื่อตำบล ภาษาอังกฤษ	text  
+subdistrict_name_th	= ชื่อตำบล ภาษาไทย	text  
+district_id	= รหัสอำเภอ	int4(32,0)  
+district_name_en	 = ชื่ออำเภอ ภาษาอังกฤษ	text  
+district_name_th	= ชื่ออำเภอ ภาษาไทย	text  
+province_id	 = รหัสจังหวัด	int4(32,0)  
+province_name_en	= ชื่อจังหวัด ภาษาอังกฤษ	text  
+province_name_th =	ชื่อจังหวัด ภาษาไทย	text  
+walk_leisure =	คะแนนการเข้าถึงสถานที่พักผ่อนหย่อนใจ โดยการเดิน	float8(53,0)  
+walk_public_service =	คะแนนการเข้าถึงสถานที่บริการสาธารณะ โดยการเดิน	float8(53,0)  
+walk_school	= คะแนนการเข้าถึงสถานศึกษา โดยการเดิน	float8(53,0)  
+walk_shopping	= คะแนนการเข้าถึงสถานที่ shopping โดยการเดิน	float8(53,0)  
+walk_work	= คะแนนการเข้าถึงแหล่งทำงาน โดยการเดิน	float8(53,0)  
+walk_total	= คะแนนการเข้าถึงสถานที่ดำเนินชีวิตประจำวัน โดยการเดิน	float8(53,0)  
+access_boat	= คะแนนการเข้าถึงสถานที่ดำเนินชีวิตประจำวัน โดยขนส่งเรือสาธารณะ	float8(53,0)  
+access_bus	= คะแนนการเข้าถึงสถานที่ดำเนินชีวิตประจำวัน โดยขนส่งรถ Bus สาธารณะ	float8(53,0)  
+access_train	= คะแนนการเข้าถึงสถานที่ดำเนินชีวิตประจำวัน โดยขนส่งรถไฟสาธารณะ	float8(53,0)  
+access_total	= คะแนนการเข้าถึงสถานที่ดำเนินชีวิตประจำวัน โดยขนส่งสาธารณะ	float8(53,0)  
+drive_leisure	คะแนนการเข้าถึงสถานที่พักผ่อนหย่อนใจ โดยการขับรถยนต์	float8(53,0)  
+drive_public_service	= คะแนนการเข้าถึงสถานที่บริการสาธารณะ โดยการขับรถยนต์	float8(53,0)  
+drive_school	= คะแนนการเข้าถึงสถานศึกษา โดยการขับรถยนต์	float8(53,0)  
+drive_shopping	= คะแนนการเข้าถึงสถานที่ shopping โดยการขับรถยนต์	float8(53,0)  
+drive_work	= คะแนนการเข้าถึงแหล่งทำงาน โดยการขับรถยนต์	float8(53,0)  
+drive_total	= คะแนนการเข้าถึงสถานที่ดำเนินชีวิตประจำวัน โดยการขับรถยนต์	float8(53,0)  
+source	= แหล่งที่มาของข้อมูล  
 
 ### Median rent price
-transction_year	= ปี	Date (Year)
-transction_month	= เดือน	Date (Month)
-listing_province_name_th	= ชื่อจังหวัด ภาษาไทย	text
-listing_province_name_en	= ชื่อจังหวัด ภาษาอังกฤษ	text
-listing_district_name_th	= ชื่อเขต ภาษาไทย	text
-listing_district_name_en	= ชื่อเขต ภาษาอังกฤษ	text
-project_propertytype_name_th	= รูปแบบ อสังหา ภาษาไทย	text
-project_propertytype_name_en	= รูปแบบ อสังหา ภาษาอังกฤษ	text
-Total_Listing	= จำนวน โครงการทั้งหมด	int4(32,0)
-median_rent_price_sqm	= ราคาเช่าเฉลี่ย/ตรม	int4(32,0)
+transction_year	= ปี	Date (Year)  
+transction_month	= เดือน	Date (Month)  
+listing_province_name_th	= ชื่อจังหวัด ภาษาไทย	text  
+listing_province_name_en	= ชื่อจังหวัด ภาษาอังกฤษ	text  
+listing_district_name_th	= ชื่อเขต ภาษาไทย	text  
+listing_district_name_en	= ชื่อเขต ภาษาอังกฤษ	text  
+project_propertytype_name_th	= รูปแบบ อสังหา ภาษาไทย	text  
+project_propertytype_name_en	= รูปแบบ อสังหา ภาษาอังกฤษ	text  
+Total_Listing	= จำนวน โครงการทั้งหมด	int4(32,0)  
+median_rent_price_sqm	= ราคาเช่าเฉลี่ย/ตรม	int4(32,0)  
 
 ### chadchart
 
- ticket_id  = หมายเลขตั๋ว   object
- type = ประเภทปัญหาเส้นเลือดฝอย object
- organization = องค์กร object
- comment = ความเห็น object
- coords = ละติจูด ลองจิจูด object
- photo =  รูปภาพ object
- address = ที่อยู่ object
- district = เขต object
- subdistrict = แขวง   object
- province = จังหวัด object
- timestamp = เวลาที่ส่งเรื่อง object
- state = สถานะ object
+ ticket_id  = หมายเลขตั๋ว   object  
+ type = ประเภทปัญหาเส้นเลือดฝอย object  
+ organization = องค์กร object  
+ comment = ความเห็น object  
+ coords = ละติจูด ลองจิจูด object  
+ photo =  รูปภาพ object  
+ address = ที่อยู่ object  
+ district = เขต object  
+ subdistrict = แขวง   object  
+ province = จังหวัด object  
+ timestamp = เวลาที่ส่งเรื่อง object  
+ state = สถานะ object  
 
 ## Reference
-1.ข้อมูลคะแนนด้านการบริโภค คะแนนด้านการเข้าถึงสถานที่ต่างๆในกรุงเทพ ราคาประกาศเช่าที่อยู่อาศัยประเภท จัดสรร ราคาแสดงแบบค่ากลาง (median price)
+1.ข้อมูลคะแนนด้านการบริโภค คะแนนด้านการเข้าถึงสถานที่ต่างๆในกรุงเทพ ราคาประกาศเช่าที่อยู่อาศัยประเภท จัดสรร ราคาแสดงแบบค่ากลาง (median price)  
 https://gobestimate.com/data?fbclid=IwAR1O4o-h8h-Mz3wZoCAEZJCQj_8DLEM2jAlLhAHHHlcscdMzh4oql21DcL0
 
-2. ข้อมูลรายงานปัญหาที่เจอในกรุงเทพและปริมณฑลจาก traffy fondue
+2. ข้อมูลรายงานปัญหาที่เจอในกรุงเทพและปริมณฑลจาก traffy fondue  
 https://www.traffy.in.th/?page_id=4434
 
 
