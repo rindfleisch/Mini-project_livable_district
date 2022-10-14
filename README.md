@@ -299,7 +299,7 @@ median_rent_price_sqm	= ราคาเช่าเฉลี่ย/ตรม	int
 
 ## Reference
 1.ข้อมูลคะแนนด้านการบริโภค คะแนนด้านการเข้าถึงสถานที่ต่างๆในกรุงเทพ ราคาประกาศเช่าที่อยู่อาศัยประเภท จัดสรร ราคาแสดงแบบค่ากลาง (median price)  
-https://gobestimate.com/data?fbclid=IwAR1O4o-h8h-Mz3wZoCAEZJCQj_8DLEM2jAlLhAHHHlcscdMzh4oql21DcL0
+https://gobestimate.com/data?fbclid=IwAR1O4o-h8h-Mz3wZoCAEZJCQj_8DLEM2jAlLhAHHHlcscdMzh4oql21DcL0  
 
 2. ข้อมูลรายงานปัญหาที่เจอในกรุงเทพและปริมณฑลจาก traffy fondue  
 https://www.traffy.in.th/?page_id=4434
